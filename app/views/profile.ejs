@@ -1,0 +1,39 @@
+<% include header %>
+  <div class="container">
+
+    <div class="page-header text-center">
+      <h1><span class="fa fa-anchor"></span> Página de perfil</h1>
+      <a href="/log/out" class="btn btn-default btn-sm">Mmmm. Me voy por que yo quiero.</a>
+    </div>
+
+    <div class="row">
+
+      <!-- Información del login en local !-->
+      <div class="col-sm-6">
+        <div class="well">
+          <h3><span class="fa fa-user"></span> Local</h3>
+          <p>
+            <strong>username</strong>: <%= user.username %><br>
+            <strong>Mensaje</strong>: <%= user.text %><br>
+          </p>
+        </div>
+      </div>
+
+      <!-- Información del login con twitter !-->
+      <div class="col-sm-6">
+        <div class="well">
+          <h3 class="text-info"><span class="fa fa-twitter"></span> Twitter</h3>
+          <img src="<%= user.twitter.avatar%>" alt="avatar">
+          <p>
+            <strong>id</strong>: <%= user.twitter.id %><br>
+            <strong>token</strong>: <%= user.twitter.token %><br>
+            <strong>token Secret</strong>: <%= user.twitter.tokenSecret %><br>
+            <strong>username</strong>: <%= user.twitter.username %><br>
+            <strong>displayName</strong>: <%= user.twitter.displayname %>
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+<% include footer %>

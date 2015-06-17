@@ -1,0 +1,32 @@
+html {
+  height: 100%;
+}
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background: url('http://fondosdefuturama.com/wp-content/uploads/images/89/fry.jpg') no-repeat;
+  background-size: cover;
+  position: relative;
+  height: 100%;
+  color: white;
+}
+
+a {
+  color: #00B7FF;
+}
+.container {
+  border: solid grey 1px;
+}
+
+.jumbotron {
+  background: transparent;
+}
+.well {
+  background-color: transparent
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-right: 20px;
+}
